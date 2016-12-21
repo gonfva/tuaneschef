@@ -1,28 +1,19 @@
-== README
+== Tuaneschef
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was a quick project to allow creating a webpage for voting in something similar to a MasterChef contest. Not sure what I will do with it, but at least I want the code to be there. No tests.
 
-Things you may want to cover:
+You need to define the following environment variables
 
-* Ruby version
+* MAIL_ADDRESS (I used a Gmail account, with 2FA and application password)
 
-* System dependencies
+* MAIL_PASSWORD
 
-* Configuration
+* AWS_ACCESS_KEY_ID
 
-* Database creation
+* AWS_SECRET_ACCESS_KEY
 
-* Database initialization
+* AWS_REGION
 
-* How to run the test suite
+(it stores some videos in S3)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Also see db/seeds.rb

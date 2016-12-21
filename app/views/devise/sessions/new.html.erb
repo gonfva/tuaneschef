@@ -1,0 +1,22 @@
+<h2>Para votar necesitamos saber qui&eacute;n eres</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+<div class="form-group">
+   <label>Email address</label>
+   <%= f.email_field :email, autofocus: true, :class=>"form-control" %>
+ </div>
+ <div class="form-group">
+   <label>Password</label>
+   <%= f.password_field :password, :class=>"form-control" %>
+ </div>
+ <div class="checkbox">
+   <label>
+     <%= f.check_box :remember_me %> Recordar
+   </label>
+ </div>
+ <%= f.submit "Entrar", :class=>"btn btn-default"%>
+
+<% end %>
+
+<%= render "devise/shared/links" %>

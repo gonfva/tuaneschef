@@ -1,0 +1,15 @@
+<% if votos.to_i!=0 %>
+<p class="lead">As&iacute; va la cosa cuando ha<%= "n" if votos>1%> votado <%= votos %> de <%= users %> (<%= votos*100/users %> % censo) </p>
+
+<table class="table table-bordered">
+  <tr><td><b>Cocinero</b></td><td><b>Votos</b></td><td><b>Porcentaje</b></td></tr>
+
+  <% res.sort_by{|key, value| value}.reverse.each do |key, value| %>
+    <tr><td><%= key %></td><td><%= value %></td><td><%= value*100/votos %>%</td></tr>
+
+  <%end %>
+</table>
+<% else %>
+<p class="lead">Vaya. No ha votado nadie todav&iacute;a </p>
+
+<% end %>

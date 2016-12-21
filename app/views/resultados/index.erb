@@ -1,0 +1,18 @@
+<h1 class="cover-heading">Resultados</h1>
+<div id="resultados">
+  <%= render partial: 'res_partial', locals: {res: @resultados, users:@tot_users, votos:@tot_votos}  %>
+</div>
+<script>
+$(document).ready(function () {
+    // will call refreshPartial every 3 seconds
+    setInterval(refreshPartial, 5000)
+
+});
+
+// calls action refreshing the partial
+function refreshPartial() {
+  $.ajax({
+    url: "refresh_resultados"
+ })
+}
+</script>
