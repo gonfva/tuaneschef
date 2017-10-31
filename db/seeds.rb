@@ -13,8 +13,9 @@ Cocinero.create(nombre: 'Sergio')
 Cocinero.create(nombre: 'Fernando')
 
 user = User.new(
-  email: 'xxxx',
-  password: 'xxxx',
-  password_confirmation: 'xxxx'
+  email: 'test@example.com',
+  password: '12345678',
+  password_confirmation: '12345678',
+  admin: true
 )
 user.save!
