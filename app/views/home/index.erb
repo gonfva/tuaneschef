@@ -1,18 +1,18 @@
-<h1 class="cover-heading">Vota por el mejor cocinero</h1>
-<p class="lead">Bienvenido a la p&aacute;gina de la votaci&oacute;n para el mejor cocinero.</p>
+<h1 class="cover-heading">Choose the best chef</h1>
+<p class="lead">Welcome to the page to choose the best chef.</p>
 
 <% if current_user.respond_to?(:admin) && current_user.admin? %>
 <p class="lead">
-  <a href="/resultados" class="btn btn-lg btn-default">Resultados</a>
+  <a href="/resultados" class="btn btn-lg btn-default">Results</a>
 </p>
 <p class="lead">
   <a href="/admin" class="btn btn-lg btn-default">Admin</a>
 </p>
 <p class="lead">
-  <a href="/borrar_votos" class="btn btn-lg btn-default"  onclick="return confirm('Estas seguro de que quieres borrar todos los votos?');">Borrar todos los votos</a>
+  <a href="/borrar_votos" class="btn btn-lg btn-default"  onclick="return confirm('Are you sure you want to delete all the votes?');">Delete all the votes</a>
 </p>
 <p class="lead">
-<%= link_to('Salir de administrador', destroy_user_session_path, :method => :delete) %>  
+<%= link_to('Salir de administrador', destroy_user_session_path, :method => :delete) %>
 </p>
 <% else %>
 <p class="lead">
