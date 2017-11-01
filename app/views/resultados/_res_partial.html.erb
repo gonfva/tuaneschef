@@ -1,5 +1,5 @@
 <% if votos.to_i!=0 %>
-<p class="lead">As&iacute; va la cosa cuando ha<%= "n" if votos>1%> votado <%= votos %> de <%= users %> (<%= votos*100/users %> % censo) </p>
+<p class="lead">These are the results with <%= votos %> votes with a total of <%= users %> users (<%= votos*100/users %> % voter turnout) </p>
 
 <table class="table table-bordered">
   <tr><td><b>Chef</b></td><td><b>Votes</b></td><td><b>Percentage</b></td></tr>
