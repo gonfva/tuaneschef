@@ -1,4 +1,4 @@
-<h2>Para votar necesitamos saber qui&eacute;n eres</h2>
+<h2>We need to know who you are in order to vote</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
@@ -15,7 +15,7 @@
      <%= f.check_box :remember_me %> Recordar
    </label>
  </div>
- <%= f.submit "Entrar", :class=>"btn btn-default"%>
+ <%= f.submit "Login", :class=>"btn btn-default"%>
 
 <% end %>
 
