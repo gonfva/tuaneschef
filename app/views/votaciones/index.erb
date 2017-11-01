@@ -1,6 +1,6 @@
-<h1 class="cover-heading">Vota por el mejor cocinero</h1>
+<h1 class="cover-heading">Choose the best chef</h1>
 <% if @voto.present? %>
-  <h2>Has votado por <b><%= @voto.cocinero.nombre %></b>
+  <h2>You've voted for <b><%= @voto.cocinero.nombre %></b>
   </h2>
   <p class="lead"><%= @voto.cocinero.nombre%></p>
 
@@ -11,7 +11,7 @@
   <div class="row">
 
       <div class="col-lg-12">
-          <p class="lead">Thse are the options.</p>
+          <p class="lead">These are the options.</p>
       </div>
 
       <% @cocineros.each do |cocinero| %>
