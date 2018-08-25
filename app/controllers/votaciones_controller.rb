@@ -1,5 +1,5 @@
 class VotacionesController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user
 
   def index
     @voto=Voto.where(:user=>current_user).first
